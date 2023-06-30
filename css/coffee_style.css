@@ -1,0 +1,276 @@
+@import url(//db.onlinewebfonts.com/c/00370d92f1b404768d34ac7dc664289e?family=Sansation);
+
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+a, p{
+    text-decoration: none;
+    font-family: "Sansation";
+    color: #626262;
+}
+
+a:hover{
+    color: #4E8A66;
+    
+}
+
+.navbar_top{
+    height: 10px;
+}
+
+header{
+    background-color: #4E8A66;
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+}
+
+nav{
+    height: 95px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 9vw;
+    padding-right: 9vw;
+    display: flex;
+}
+
+.logo{
+    border-radius: 100%;
+    height: 75px;
+    margin-top: 10px;
+}
+
+.left{
+    margin-top: 54px;
+}
+
+.right{
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 31px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar_content{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    margin: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.register{
+    height: 23px;
+}
+
+.flag{
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    margin-top: 2px;
+}
+
+.en{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #626262;
+    margin-top:8px;
+    margin-left: 5px;
+}
+
+.spacing{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+    margin-top: 35px;
+    height: 30px;
+}
+
+.burger_menu{
+    display: block;
+    background-color: #626262;
+    height: 3px;
+    width: 27px;
+    margin: 5px auto;
+}
+
+@media(max-width: 810px){
+    .burger{
+        display: block;
+    }
+    .burger.active .burger_menu:nth-child(2){
+        opacity:0;
+    }
+    .burger.active .burger_menu:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .burger.active .burger_menu:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar{
+        justify-content: right;
+        gap: 3vw;
+    }
+
+    .left{
+        position: fixed;
+        left: -100vw;
+        width: 100vw;
+        top: 50px;
+        gap: 0;
+        display:flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        text-align: left;
+        transition: 0.2s;
+    }
+
+    .navbar_content{
+        padding: 15px;
+        padding-left: 10vw;
+        margin: 0;
+    }
+    .navbar_content:hover{
+        background-color: #4E8A66;
+        color: white;
+    }
+
+    .left.active{
+        left: 0;
+    }
+
+}
+    
+footer{
+    background-color: #4E8A66;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.bottom_logo{
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+.copyright{
+    color: white;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+.body{
+    padding-top: 105px;
+    
+}
+
+.content1, .content2, .content3, .content4, .content5{
+    width: 82vw;
+    padding-right: 9vw;
+    padding-left: 9vw;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.content1{
+    background: rgba(61, 22, 22, 0.26);
+}
+
+.content2{
+    background: rgba(138, 164, 143, 0.2);
+
+}
+
+.content3{
+    background: #D9D9D9;
+}
+
+.content4{
+    background: #EFBFBF;
+}
+
+.content5{
+    background: rgba(190, 167, 255, 0.57);
+}
+
+.coffee_image{
+    align-items: center;
+    justify-content: center;
+    margin-right: calc(2vw + 20px);
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.coffee_name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5vw + 20px);
+    line-height: 36px;
+    color: #4E8A66;
+}
+
+.coffee_price{
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.5vw + 10px);
+    line-height: 22px;
+    color: #626262;
+    margin-top: 0.3vh;
+    margin-bottom: 0.5vh;
+}
+
+.coffee_description{
+    font-style: normal;
+    text-align: justify;
+    font-weight: 400;
+    font-size: calc(0.5vw +  14px);
+    line-height: 27px;
+    color: #626262;
+}
+
+@media(max-width: 810px){
+    .content1, .content2, .content3, .content4, .content5{
+        flex-direction: column;
+    }
+    .coffee_image{
+        margin: 0px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media(max-width: 420px){
+    .coffee_image{
+        width: 82vw;
+        height: auto;
+    }
+
+}

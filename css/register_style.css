@@ -1,0 +1,160 @@
+@import url(//db.onlinewebfonts.com/c/00370d92f1b404768d34ac7dc664289e?family=Sansation);
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Sansation";
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../assets/register_background.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 600px;
+    border-radius: 6px;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+
+}
+
+.top{
+    height: 90px;
+    background-color: #4E8A66;
+    border-radius: 6px 6px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.top_register{
+    font-family: 'Sansation';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+color: #FFFFFF;
+}
+
+
+
+
+.mid{
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.fullname, .email, .password, .confirm_password, .address{
+    display: flex;
+    flex-direction: column;
+}
+
+.label1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #626262;
+    margin-bottom: 10px;
+}
+
+.input1{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #626262;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.agree{
+    display: flex;
+    align-items: center;
+}
+
+.input2{
+    width: 15px;
+    height: 15px;
+    background: #FFFFFF;
+    border: 1px solid #626262;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.label2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #626262;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+}
+
+
+.bot{
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    width: 100%;
+    height: 30px;
+    background: #4E8A66;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.button:hover{
+    background: #4e8a66de;
+}
+
+@media(max-width: 810px){
+    .container{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .top{
+        border-radius: 0;
+    }
+
+}

@@ -1,0 +1,254 @@
+@import url(//db.onlinewebfonts.com/c/00370d92f1b404768d34ac7dc664289e?family=Sansation);
+
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+a, p{
+    text-decoration: none;
+    font-family: "Sansation";
+    color: #626262;
+}
+
+a:hover{
+    color: #4E8A66;
+    
+}
+
+.navbar_top{
+    height: 10px;
+}
+
+header{
+    background-color: #4E8A66;
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+}
+
+nav{
+    height: 95px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 9vw;
+    padding-right: 9vw;
+    display: flex;
+}
+
+.logo{
+    border-radius: 100%;
+    height: 75px;
+    margin-top: 10px;
+}
+
+.left{
+    margin-top: 54px;
+}
+
+.right{
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 31px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar_content{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    margin: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.register{
+    height: 23px;
+}
+
+.flag{
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    margin-top: 2px;
+}
+
+.en{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #626262;
+    margin-top:8px;
+    margin-left: 5px;
+}
+
+.spacing{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+    margin-top: 35px;
+    height: 30px;
+}
+
+.burger_menu{
+    display: block;
+    background-color: #626262;
+    height: 3px;
+    width: 27px;
+    margin: 5px auto;
+}
+
+@media(max-width: 810px){
+    .burger{
+        display: block;
+    }
+    .burger.active .burger_menu:nth-child(2){
+        opacity:0;
+    }
+    .burger.active .burger_menu:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .burger.active .burger_menu:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar{
+        justify-content: right;
+        gap: 3vw;
+    }
+
+    .left{
+        position: fixed;
+        left: -100vw;
+        width: 100vw;
+        top: 50px;
+        gap: 0;
+        display:flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        text-align: left;
+        transition: 0.2s;
+    }
+
+    .navbar_content{
+        padding: 15px;
+        padding-left: 10vw;
+        margin: 0;
+    }
+    .navbar_content:hover{
+        background-color: #4E8A66;
+        color: white;
+    }
+
+    .left.active{
+        left: 0;
+    }
+
+}
+    
+footer{
+    background-color: #4E8A66;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.bottom_logo{
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+.copyright{
+    color: white;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+.body{
+    padding-top: 105px;
+    
+}
+.body{
+    padding-left: 9vw;
+    padding-right: 9vw;
+    width: 82vw;
+}
+
+.judul{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-family: 'Sansation';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: #4E8A66;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.about_paragraph{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+@media(max-width: 760px){
+    #ab4{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 660px){
+    #ab3{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 590px){
+    #ab2{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 370px){
+    #ab1{
+        width: 100%;
+        height: auto;
+    }
+}
